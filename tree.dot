@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Title_Mr <= 0.5\ngini = 0.467\nsamples = 623\nvalue = [392, 231]", fillcolor="#f4cbae"] ;
+1 [label="Pclass_3 <= 0.5\ngini = 0.433\nsamples = 255\nvalue = [81, 174]", fillcolor="#95cbf1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Title_Rev <= 0.5\ngini = 0.18\nsamples = 130\nvalue = [13, 117]", fillcolor="#4fa8e8"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+42 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 42 ;
+43 [label="Family_members <= 0.35\ngini = 0.496\nsamples = 125\nvalue = [68, 57]", fillcolor="#fbebdf"] ;
+1 -> 43 ;
+44 [label="(...)", fillcolor="#C0C0C0"] ;
+43 -> 44 ;
+119 [label="(...)", fillcolor="#C0C0C0"] ;
+43 -> 119 ;
+130 [label="Pclass_1 <= 0.5\ngini = 0.262\nsamples = 368\nvalue = [311, 57]", fillcolor="#ea985d"] ;
+0 -> 130 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+131 [label="Age <= 0.4\ngini = 0.208\nsamples = 297\nvalue = [262, 35]", fillcolor="#e89253"] ;
+130 -> 131 ;
+132 [label="(...)", fillcolor="#C0C0C0"] ;
+131 -> 132 ;
+229 [label="(...)", fillcolor="#C0C0C0"] ;
+131 -> 229 ;
+254 [label="Age <= 0.34\ngini = 0.428\nsamples = 71\nvalue = [49, 22]", fillcolor="#f1ba92"] ;
+130 -> 254 ;
+255 [label="(...)", fillcolor="#C0C0C0"] ;
+254 -> 255 ;
+260 [label="(...)", fillcolor="#C0C0C0"] ;
+254 -> 260 ;
+}
